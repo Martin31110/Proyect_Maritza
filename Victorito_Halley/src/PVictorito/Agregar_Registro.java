@@ -57,7 +57,7 @@ public class Agregar_Registro extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         L2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        L2.setForeground(new java.awt.Color(214, 0, 110));
+        L2.setForeground(new java.awt.Color(255, 255, 0));
         L2.setText("AGREGAR REGISTRO");
         jPanel1.add(L2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 140, 30));
 
@@ -184,6 +184,7 @@ public class Agregar_Registro extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 442, 140, 40));
 
         L13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        L13.setForeground(new java.awt.Color(255, 255, 0));
         jPanel1.add(L13, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 140, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
