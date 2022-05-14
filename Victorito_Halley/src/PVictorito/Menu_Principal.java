@@ -46,6 +46,9 @@ public class Menu_Principal extends javax.swing.JFrame {
         L4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Añadir cliente.PNG"))); // NOI18N
         L4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         L4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                L4MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 L4MouseEntered(evt);
             }
@@ -58,6 +61,9 @@ public class Menu_Principal extends javax.swing.JFrame {
         L5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/verificar.png"))); // NOI18N
         L5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         L5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                L5MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 L5MouseEntered(evt);
             }
@@ -70,6 +76,9 @@ public class Menu_Principal extends javax.swing.JFrame {
         L6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/busqueda.png"))); // NOI18N
         L6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         L6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                L6MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 L6MouseEntered(evt);
             }
@@ -79,6 +88,7 @@ public class Menu_Principal extends javax.swing.JFrame {
         });
         jPanel1.add(L6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 130, 140));
 
+        L7.setBackground(new java.awt.Color(255, 255, 255));
         L7.setFont(new java.awt.Font("Traditional Arabic", 0, 18)); // NOI18N
         jPanel1.add(L7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 180, 40));
 
@@ -139,6 +149,7 @@ public class Menu_Principal extends javax.swing.JFrame {
     */
     private void L4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L4MouseEntered
         L7.setText("AÑADIR CLIENTE");
+        L7.setForeground(new java.awt.Color(0, 193, 193));
     }//GEN-LAST:event_L4MouseEntered
 
     private void L4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L4MouseExited
@@ -147,6 +158,7 @@ public class Menu_Principal extends javax.swing.JFrame {
 
     private void L5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L5MouseEntered
         L8.setText("AÑADIR REGISTRO");
+        L8.setForeground(new java.awt.Color(255, 255, 0));
     }//GEN-LAST:event_L5MouseEntered
 
     private void L5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L5MouseExited
@@ -155,6 +167,7 @@ public class Menu_Principal extends javax.swing.JFrame {
 
     private void L6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L6MouseEntered
         L9.setText("CONSULTAR REGISTRO");
+        L9.setForeground(new java.awt.Color(255, 0, 255));
     }//GEN-LAST:event_L6MouseEntered
 
     private void L6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L6MouseExited
@@ -169,6 +182,22 @@ public class Menu_Principal extends javax.swing.JFrame {
        System.exit(0);
     }//GEN-LAST:event_L10MouseClicked
 
+    private void L4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L4MouseClicked
+        Agregar_Cliente R1 = new Agregar_Cliente();
+        R1.setVisible(true);          
+    }//GEN-LAST:event_L4MouseClicked
+
+    private void L5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L5MouseClicked
+        Agregar_Registro R2 = new Agregar_Registro ();
+        R2.setVisible(true);
+    }//GEN-LAST:event_L5MouseClicked
+
+    private void L6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L6MouseClicked
+        Consultar_Registro R3 = new Consultar_Registro();
+        R3.setVisible(true);
+    }//GEN-LAST:event_L6MouseClicked
+
+    
     public static void main(String args[]) {
 
         try {
