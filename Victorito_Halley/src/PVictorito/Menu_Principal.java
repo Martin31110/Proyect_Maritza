@@ -181,7 +181,7 @@ public class Menu_Principal extends javax.swing.JFrame {
     private void L10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L10MouseClicked
        System.exit(0);
     }//GEN-LAST:event_L10MouseClicked
-
+//objeto a otras ventanas con el evento Mouse Cliked
     private void L4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L4MouseClicked
         Agregar_Cliente R1 = new Agregar_Cliente();
         R1.setVisible(true);          
