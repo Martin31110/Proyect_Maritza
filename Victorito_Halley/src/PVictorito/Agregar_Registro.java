@@ -21,32 +21,32 @@ public class Agregar_Registro extends javax.swing.JFrame {
         L3 = new javax.swing.JLabel();
         L11 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField1 = new javax.swing.JTextField();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
+        TXT1 = new javax.swing.JTextField();
+        SP1 = new javax.swing.JSeparator();
+        SP2 = new javax.swing.JSeparator();
         L4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jSeparator3 = new javax.swing.JSeparator();
-        jTextField4 = new javax.swing.JTextField();
+        TXT2 = new javax.swing.JTextField();
+        SP3 = new javax.swing.JSeparator();
+        TXT3 = new javax.swing.JTextField();
         L5 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jSeparator4 = new javax.swing.JSeparator();
-        jSeparator5 = new javax.swing.JSeparator();
-        jSeparator6 = new javax.swing.JSeparator();
+        TXT4 = new javax.swing.JTextField();
+        SP4 = new javax.swing.JSeparator();
+        SP5 = new javax.swing.JSeparator();
+        SP6 = new javax.swing.JSeparator();
         L6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jSeparator7 = new javax.swing.JSeparator();
+        TXT6 = new javax.swing.JTextField();
+        SP7 = new javax.swing.JSeparator();
         L7 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jSeparator8 = new javax.swing.JSeparator();
+        TXT7 = new javax.swing.JTextField();
+        SP8 = new javax.swing.JSeparator();
         L12 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        TXTA1 = new javax.swing.JTextArea();
         L8 = new javax.swing.JLabel();
-        jSeparator9 = new javax.swing.JSeparator();
-        jTextField7 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        SP9 = new javax.swing.JSeparator();
+        TXT8 = new javax.swing.JTextField();
+        BT1 = new javax.swing.JButton();
+        BT2 = new javax.swing.JButton();
         L13 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(jTextPane1);
@@ -93,74 +93,99 @@ public class Agregar_Registro extends javax.swing.JFrame {
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Trabajo", "Cotizacion" }));
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 112, 90, 20));
 
-        jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jTextField1.setBorder(null);
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 290, 30));
+        TXT1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        TXT1.setBorder(null);
+        jPanel1.add(TXT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 290, 30));
 
-        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 310, 10));
+        SP1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 310, 10));
 
-        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 310, 10));
+        SP2.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 310, 10));
 
         L4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         L4.setText("Precio unitario");
         jPanel1.add(L4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 100, 20));
 
-        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jTextField3.setBorder(null);
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 310, 30));
+        TXT2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        TXT2.setBorder(null);
+        jPanel1.add(TXT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 310, 30));
 
-        jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 120, 10));
+        SP3.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 120, 10));
 
-        jTextField4.setBorder(null);
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 120, 30));
+        TXT3.setBorder(null);
+        TXT3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TXT3KeyTyped(evt);
+            }
+        });
+        jPanel1.add(TXT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 120, 30));
 
         L5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         L5.setText("Categoria:");
         jPanel1.add(L5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 60, 20));
 
-        jTextField5.setBorder(null);
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 222, 120, 30));
+        TXT4.setBorder(null);
+        TXT4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TXT4KeyTyped(evt);
+            }
+        });
+        jPanel1.add(TXT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 222, 120, 30));
 
-        jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 120, 10));
+        SP4.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 120, 10));
 
-        jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 120, 10));
+        SP5.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 120, 10));
 
-        jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 250, 120, 10));
+        SP6.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 250, 120, 10));
 
         L6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         L6.setText("Cantidad");
         jPanel1.add(L6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 60, 20));
 
-        jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField2.setBorder(null);
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 266, 110, 30));
+        TXT6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        TXT6.setBorder(null);
+        TXT6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TXT6KeyTyped(evt);
+            }
+        });
+        jPanel1.add(TXT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 266, 110, 30));
 
-        jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 110, 10));
+        SP7.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 110, 10));
 
         L7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         L7.setText("Precio total (Sin IVA):");
         jPanel1.add(L7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 130, 20));
 
-        jTextField6.setBorder(null);
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 110, 20));
+        TXT7.setBorder(null);
+        TXT7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TXT7KeyTyped(evt);
+            }
+        });
+        jPanel1.add(TXT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 110, 20));
 
-        jSeparator8.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 110, 10));
+        SP8.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 110, 10));
 
         L12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         L12.setText("Informacion Adicional:");
         jPanel1.add(L12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 130, 20));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane2.setViewportView(jTextArea1);
+        TXTA1.setColumns(20);
+        TXTA1.setRows(5);
+        TXTA1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TXTA1KeyTyped(evt);
+            }
+        });
+        jScrollPane2.setViewportView(TXTA1);
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 240, 100));
 
@@ -168,20 +193,20 @@ public class Agregar_Registro extends javax.swing.JFrame {
         L8.setText("Precio total (con IVA):");
         jPanel1.add(L8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 130, 20));
 
-        jSeparator9.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, 160, 10));
+        SP9.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(SP9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, 160, 10));
 
-        jTextField7.setBorder(null);
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 342, 160, 30));
+        TXT8.setBorder(null);
+        jPanel1.add(TXT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 342, 160, 30));
 
-        jButton1.setBackground(new java.awt.Color(0, 193, 193));
-        jButton1.setText("Subir Registro");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 442, 110, 40));
+        BT1.setBackground(new java.awt.Color(0, 193, 193));
+        BT1.setText("Subir Registro");
+        jPanel1.add(BT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 442, 110, 40));
 
-        jButton2.setBackground(new java.awt.Color(0, 193, 193));
-        jButton2.setText("Limpiar los campos");
-        jButton2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 442, 140, 40));
+        BT2.setBackground(new java.awt.Color(0, 193, 193));
+        BT2.setText("Limpiar los campos");
+        BT2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel1.add(BT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 442, 140, 40));
 
         L13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         L13.setForeground(new java.awt.Color(255, 255, 0));
@@ -215,6 +240,32 @@ public class Agregar_Registro extends javax.swing.JFrame {
        Menu_Principal R4 = new Menu_Principal ();
        R4.setVisible(true);
     }//GEN-LAST:event_L9MouseClicked
+ /*Evento para que solo ingrese numeros en los campos donde solo iran numeros
+    */
+    private void TXT4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT4KeyTyped
+        char n = evt.getKeyChar();
+        if(( n<  '0' || n> '9')) evt.consume();
+    }//GEN-LAST:event_TXT4KeyTyped
+
+    private void TXT3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT3KeyTyped
+        char n = evt.getKeyChar();
+        if(( n<  '0' || n> '9')) evt.consume();
+    }//GEN-LAST:event_TXT3KeyTyped
+
+    private void TXT6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT6KeyTyped
+        char n = evt.getKeyChar();
+        if(( n<  '0' || n> '9')) evt.consume();
+    }//GEN-LAST:event_TXT6KeyTyped
+
+    private void TXT7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT7KeyTyped
+        char n = evt.getKeyChar();
+        if(( n<  '0' || n> '9')) evt.consume();
+    }//GEN-LAST:event_TXT7KeyTyped
+//Evento y metodo para que solo sean letras en los campos donde solo seran letras
+    private void TXTA1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXTA1KeyTyped
+        char c = evt.getKeyChar();
+        if ((c<'a' || c>'z') && (c<'A' || c>'Z') && (c<' ' || c>' ')) evt.consume();
+    }//GEN-LAST:event_TXTA1KeyTyped
 
     
     public static void main(String args[]) {
@@ -245,6 +296,8 @@ public class Agregar_Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BT1;
+    private javax.swing.JButton BT2;
     private javax.swing.JLabel L1;
     private javax.swing.JLabel L10;
     private javax.swing.JLabel L11;
@@ -258,29 +311,27 @@ public class Agregar_Registro extends javax.swing.JFrame {
     private javax.swing.JLabel L7;
     private javax.swing.JLabel L8;
     private javax.swing.JLabel L9;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JSeparator SP1;
+    private javax.swing.JSeparator SP2;
+    private javax.swing.JSeparator SP3;
+    private javax.swing.JSeparator SP4;
+    private javax.swing.JSeparator SP5;
+    private javax.swing.JSeparator SP6;
+    private javax.swing.JSeparator SP7;
+    private javax.swing.JSeparator SP8;
+    private javax.swing.JSeparator SP9;
+    private javax.swing.JTextField TXT1;
+    private javax.swing.JTextField TXT2;
+    private javax.swing.JTextField TXT3;
+    private javax.swing.JTextField TXT4;
+    private javax.swing.JTextField TXT6;
+    private javax.swing.JTextField TXT7;
+    private javax.swing.JTextField TXT8;
+    private javax.swing.JTextArea TXTA1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JSeparator jSeparator9;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
