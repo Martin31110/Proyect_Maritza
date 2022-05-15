@@ -190,11 +190,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Limpiar todos los Campos"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="TXTF1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Ingrese el nombre del cliente"/>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TXTF1KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="TXTF2">
           <Properties>
@@ -210,6 +216,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Ingrese el numero del cliente"/>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TXTF4KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="TXTF5">
           <Properties>
