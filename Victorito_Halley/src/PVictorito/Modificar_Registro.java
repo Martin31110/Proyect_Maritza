@@ -26,21 +26,94 @@ public class Modificar_Registro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        PANEL = new javax.swing.JPanel();
+        LB1 = new javax.swing.JLabel();
+        BTN1 = new javax.swing.JButton();
+        LB2 = new javax.swing.JLabel();
+        TXTJ1 = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        PANEL.setBackground(new java.awt.Color(255, 255, 255));
+        PANEL.setForeground(new java.awt.Color(255, 255, 255));
+
+        LB1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        LB1.setForeground(new java.awt.Color(214, 0, 110));
+        LB1.setText("Modificar Registro");
+
+        BTN1.setText("Buscar el Registro");
+
+        LB2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        LB2.setText("Ingrese el codigo del cliente que desea modificar:");
+
+        TXTJ1.setBackground(new java.awt.Color(204, 204, 204));
+        TXTJ1.setBorder(null);
+        TXTJ1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TXTJ1ActionPerformed(evt);
+            }
+        });
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout PANELLayout = new javax.swing.GroupLayout(PANEL);
+        PANEL.setLayout(PANELLayout);
+        PANELLayout.setHorizontalGroup(
+            PANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PANELLayout.createSequentialGroup()
+                .addContainerGap(224, Short.MAX_VALUE)
+                .addComponent(LB1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(207, 207, 207))
+            .addGroup(PANELLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(PANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BTN1)
+                    .addGroup(PANELLayout.createSequentialGroup()
+                        .addComponent(LB2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jSeparator1)
+                            .addComponent(TXTJ1, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        PANELLayout.setVerticalGroup(
+            PANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PANELLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(LB1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addGroup(PANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LB2)
+                    .addComponent(TXTJ1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 244, Short.MAX_VALUE)
+                .addComponent(BTN1)
+                .addGap(22, 22, 22))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(PANEL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(PANEL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TXTJ1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXTJ1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXTJ1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +151,11 @@ public class Modificar_Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BTN1;
+    private javax.swing.JLabel LB1;
+    private javax.swing.JLabel LB2;
+    private javax.swing.JPanel PANEL;
+    private javax.swing.JTextField TXTJ1;
+    private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
