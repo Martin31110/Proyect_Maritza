@@ -87,7 +87,6 @@ public class Agregar_Cliente extends javax.swing.JFrame {
             }
         });
 
-        TXTF1.setBackground(new java.awt.Color(242, 242, 242));
         TXTF1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         TXTF1.setBorder(null);
         TXTF1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
